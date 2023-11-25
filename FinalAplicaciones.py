@@ -36,6 +36,8 @@ class ChessGame(tk.Tk):
             self.move_piece(row, col)
                 
 
-    
-chess_game = ChessGame()
-chess_game.mainloop()
+#Cambio1
+def refresh_board(self):
+        for widget in self.winfo_children():
+            widget.destroy()
+        self.create_board()
